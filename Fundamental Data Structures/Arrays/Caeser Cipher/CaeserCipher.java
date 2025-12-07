@@ -12,7 +12,7 @@ public class CaeserCipher{
         return transform(message, encoder);
     }
     public String decrypt(String secret) {
-        return transform(secret, encoder);
+        return transform(secret, decoder);
     }
 
 

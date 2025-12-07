@@ -15,3 +15,30 @@ Reference Book: Data Structures and Algorithm in Java | 6th Edition | Michael T.
 - [**Insertion Sort**](./Fundamental%20Data%20Structures/Arrays/Insertion%20Sort/) - Insertion Sort Algorithm
 - [**Arrays & Random**](./Fundamental%20Data%20Structures/Arrays/RandArr/) - Arrays and Random class methods.
 - [**Caeser Cipher**](./Fundamental%20Data%20Structures/Arrays/Caeser%20Cipher/) - Caeser Cipher Algorithm
+- [**Tic Tac Toe**](./Fundamental%20Data%20Structures/Arrays/Tic%20Tac%20Toe/) - Tic Tac Toe game implementation
+
+## Repository Structure
+
+```
+DSA in Java:.
+│   .gitignore
+│   README.md
+│
+└───Fundamental Data Structures
+    └───Arrays
+        ├───Caeser Cipher
+        │       CaeserCipher.java
+        │
+        ├───Game Entries
+        │       GameEntry.java
+        │       Scoreboard.java
+        │
+        ├───Insertion Sort
+        │       InsertionSort.java
+        │
+        ├───RandArr
+        │       ArrRand.java
+        │
+        └───Tic Tac Toe
+                TicTacToe.java
+```
