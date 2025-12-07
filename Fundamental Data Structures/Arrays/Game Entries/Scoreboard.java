@@ -51,28 +51,4 @@ public class Scoreboard {
 
         return sb.toString();
     }
-
-
-    public static void main(String[] args) {
-
-        Scoreboard sb = new Scoreboard(10);
-
-        String[] s = {"Mike", "Rob", "Paul", "Anna", "Rose", "Jack"};
-        int[] j = {1105, 750, 720, 660, 590, 510};
-
-        for (int i = 0; i < 6; i++) {
-            sb.add(new GameEntry(s[i], j[i]));
-        }
-
-        sb.add(new GameEntry("Jill", 740));
-
-        System.out.println(sb.toString());
-
-        System.out.println("\n\n");
-
-        System.out.println(sb.remove(2));
-
-        System.out.println(sb);
-        
-    }
 }
