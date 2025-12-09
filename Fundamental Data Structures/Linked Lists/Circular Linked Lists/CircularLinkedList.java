@@ -1,4 +1,4 @@
-public class SInglyLinkedList<E> {
+public class CircularLinkedList<E> {
     private static class Node<E> {
         private E element;
         private Node<E> next;
@@ -13,47 +13,49 @@ public class SInglyLinkedList<E> {
         public void setNext(Node<E> n) {next = n;}
     }
 
-    private Node<E> head = null;
-    private Node<E> tail = null;
-    private int size;
 
-    public SInglyLinkedList() {}
+    private Node<E> tail = null;
+    private int size = 0;
+
+    public CircularLinkedList() {}
 
     public int getSize() {return size;}
     public boolean isEmpty() {return size == 0;}
     public E first() {
-        if (isEmpty()) {return null;}
+        if (isEmpty()) {return  null;}
 
-        return head.getElement();
+        return tail.getNext().getElement();
     }
     public E last() {
         if (isEmpty()) {return null;}
 
         return tail.getElement();
     }
+    public void rotate() {
+        if (tail != null) {tail = tail.getNext();}
+    }
     public void addFirst(E e) {
-        head = new Node<>(e, head);
-        if (size == 0) {tail = head;}
-
+        if (size == 0) {
+            tail = new Node<>(e, null);
+            tail.setNext(tail);
+        } else {
+            Node<E> newest = new Node<>(e, tail.getNext());
+            tail.setNext(newest);
+        }
         size++;
     }
     public void addLast(E e) {
-        Node<E> newest = new Node<>(e, null);
-
-        if (isEmpty()) {head = newest;}
-        else {tail.setNext(newest);}
-
-        tail = newest;
-        size++;
+        addFirst(e);
+        tail = tail.getNext();
     }
     public E removeFirst() {
-        if (isEmpty()) {return null;}
+        if(isEmpty()) {return null;}
+        Node<E> head = tail.getNext();
+        
+        if (head == tail) {tail = null;}
+        else {tail.setNext(head.getNext());}
 
-        E answer = head.getElement();
-        head = head.getNext();
         size--;
-        if (size == 0) {tail = null;}
-
-    return answer;
+        return head.getElement();
     }
 }

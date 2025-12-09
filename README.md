@@ -19,11 +19,13 @@ This repository contains theory and practical implementations of Data Structures
 
 #### Linked Lists
 - [**Singly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Singly%20Linked%20Lists/) - Singly Linked List and nested Node class
+- [**Circular Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Circular%20Linked%20Lists/) - Circular Linked List and nested Node class
+- [**Doubly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Doubly%20Linked%20Lists/) - Doubly Linked List and nested Node class
 
 ## Repository Structure
 
 ```
-DSA in Java/
+DSA in Java
 │   .gitignore
 │   README.md
 │   
@@ -31,7 +33,7 @@ DSA in Java/
     ├───Arrays
     │   ├───Caeser Cipher
     │   │       CaeserCipher.java
-    │   │
+    │   │       
     │   ├───Game Entries
     │   │       GameEntry.java
     │   │       Scoreboard.java
@@ -46,6 +48,12 @@ DSA in Java/
     │           TicTacToe.java
     │
     └───Linked Lists
+        ├───Circular Linked Lists
+        │       CircularLinkedList.java
+        │
+        ├───Doubly Linked Lists
+        │       DoublyLinkedList.java
+        │
         └───Singly Linked Lists
                 SInglyLinkedList.java
 ```
