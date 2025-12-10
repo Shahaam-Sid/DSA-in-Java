@@ -22,6 +22,9 @@ This repository contains theory and practical implementations of Data Structures
 - [**Circular Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Circular%20Linked%20Lists/) - Circular Linked List and nested Node class
 - [**Doubly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Doubly%20Linked%20Lists/) - Doubly Linked List and nested Node class
 
+#### Equivalence Testing
+- [**Equivalence Testing**](./Fundamental%20Data%20Structures/Equivalence%20Testing/) - Equivalence Testing - (For Linked Lists check their respective class files)
+
 ## Repository Structure
 
 ```
@@ -33,7 +36,7 @@ DSA in Java
     ├───Arrays
     │   ├───Caeser Cipher
     │   │       CaeserCipher.java
-    │   │       
+    │   │
     │   ├───Game Entries
     │   │       GameEntry.java
     │   │       Scoreboard.java
@@ -46,6 +49,9 @@ DSA in Java
     │   │
     │   └───Tic Tac Toe
     │           TicTacToe.java
+    │
+    ├───Equivalence Testing
+    │       EquivalenceTesingArrays.java
     │
     └───Linked Lists
         ├───Circular Linked Lists
@@ -75,7 +81,7 @@ java FileName
 ## Progress Tracking
 
 - [x] Arrays
-- [ ] Linked Lists
+- [x] Linked Lists
 - [ ] Algorithm Analysis
 - [ ] Recursion
 - [ ] Stacks

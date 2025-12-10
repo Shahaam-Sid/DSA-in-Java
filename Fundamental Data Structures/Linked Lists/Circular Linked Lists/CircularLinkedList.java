@@ -58,4 +58,32 @@ public class CircularLinkedList<E> {
         size--;
         return head.getElement();
     }
+    @Override
+    public boolean equals(Object o) {
+        if (o == null) {return false;}
+        if (getClass() != o.getClass()) {return false;}
+        CircularLinkedList other = (CircularLinkedList) o;
+        if (size != other.size) {return false;}
+        if (size == 0) {return true;}
+
+        Node circleA = tail.getNext();
+
+        for (int i = 0; i < size; i++) {
+            Node circleB = other.tail.getNext();
+            Node tempA = circleA;
+            boolean allMatch = true;
+
+            for (int j = 0; j < size; j++) {
+                if (!tempA.getElement().equals(circleB.getElement())) {
+                    allMatch = false;
+                    break;
+                }
+                tempA = tempA.getNext();
+                circleB = circleB.getNext();
+            }
+            if (allMatch) return true;
+            circleA = circleA.getNext();
+        }
+        return false;
+    }
 }
