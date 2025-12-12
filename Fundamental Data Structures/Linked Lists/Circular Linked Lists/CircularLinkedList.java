@@ -62,15 +62,15 @@ public class CircularLinkedList<E> {
     public boolean equals(Object o) {
         if (o == null) {return false;}
         if (getClass() != o.getClass()) {return false;}
-        CircularLinkedList other = (CircularLinkedList) o;
+        CircularLinkedList<E> other = (CircularLinkedList<E>) o;
         if (size != other.size) {return false;}
         if (size == 0) {return true;}
 
-        Node circleA = tail.getNext();
+        Node<E> circleA = tail.getNext();
 
         for (int i = 0; i < size; i++) {
-            Node circleB = other.tail.getNext();
-            Node tempA = circleA;
+            Node<E> circleB = other.tail.getNext();
+            Node<E> tempA = circleA;
             boolean allMatch = true;
 
             for (int j = 0; j < size; j++) {
@@ -85,5 +85,18 @@ public class CircularLinkedList<E> {
             circleA = circleA.getNext();
         }
         return false;
+    }
+    @Override
+    public CircularLinkedList<E> clone() throws CloneNotSupportedException {
+        CircularLinkedList<E> other = (CircularLinkedList<E>) super.clone();
+        if (size > 0) {
+            other.tail = new Node<>(tail.getElement(), null);
+            Node<E> walk = tail.getNext();
+            Node<E> temp = other.tail;
+            while (walk != temp) {
+                Node<E> newest = new Node<>(walk.getElement(), null);
+                //Incomplete
+            }
+        }
     }
 }

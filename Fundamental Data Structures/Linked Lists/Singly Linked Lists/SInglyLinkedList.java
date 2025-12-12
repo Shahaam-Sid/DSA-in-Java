@@ -1,4 +1,4 @@
-public class SInglyLinkedList<E> {
+public class SInglyLinkedList<E> implements Cloneable {
     private static class Node<E> {
         private E element;
         private Node<E> next;
@@ -60,11 +60,11 @@ public class SInglyLinkedList<E> {
     public boolean equals(Object o) {
         if (o == null) {return false;}
         if(getClass() != o.getClass()) {return false;}
-        SInglyLinkedList other = (SInglyLinkedList) o;
+        SInglyLinkedList<E> other = (SInglyLinkedList<E>) o;
         if (size != other.size) {return false;}
 
-        Node walkA = head;
-        Node walkB = other.head;
+        Node<E> walkA = head;
+        Node<E> walkB = other.head;
 
         while (walkA != null) {
             if (!(walkA.getElement().equals(walkB.getElement()))) {return false;}
@@ -74,4 +74,22 @@ public class SInglyLinkedList<E> {
 
         return true;
     }
+    @Override
+    public SInglyLinkedList<E> clone() throws CloneNotSupportedException {
+
+        SInglyLinkedList<E> other = (SInglyLinkedList<E>) super.clone();
+        if (size > 0) {
+            other.head = new Node<>(head.getElement(), null);
+            Node<E> walk = head.getNext();
+            Node<E> otherTail = other.head;
+            while (walk != null) {
+                Node<E> newest = new Node<>(walk.getElement(), null);
+                otherTail.setNext(newest);
+                otherTail = newest;
+                walk = walk.getNext();
+            }
+        }
+        return other;
+    }
+    
 }

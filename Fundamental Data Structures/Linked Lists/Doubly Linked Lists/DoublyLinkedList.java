@@ -72,4 +72,26 @@ public class DoublyLinkedList<E> {
         size--;
         return node.getElement();
     }
+    @Override
+    public boolean equals(Object o) {
+        if (o == null) {return false;}
+        if (getClass() != o.getClass()) {return false;}
+        DoublyLinkedList<E> other = (DoublyLinkedList<E>) o;
+        if (size != other.size) {return false;}
+
+        Node<E> walkA = header.getNext();
+        Node<E> walkB = other.header.getNext();
+        
+        while (walkA != trailer) {
+            if (walkA.getElement() == null) {
+                if (walkB.getElement() != null) {return false;}
+            } else {
+                if (!(walkA.getElement().equals(walkB.getElement()))) {return false;}
+            }
+            walkA = walkA.getNext();
+            walkB = walkB.getNext();
+        }
+        
+        return true;
+    }
 }

@@ -16,14 +16,13 @@ This repository contains theory and practical implementations of Data Structures
 - [**Arrays & Random**](./Fundamental%20Data%20Structures/Arrays/RandArr/) - Exploration of array manipulation and Java's Random class methods
 - [**Caesar Cipher**](./Fundamental%20Data%20Structures/Arrays/Caeser%20Cipher/) - Classic encryption algorithm using character array transformations
 - [**Tic Tac Toe**](./Fundamental%20Data%20Structures/Arrays/Tic%20Tac%20Toe/) - Complete game implementation using 2D arrays
+- [**Equivalence in Arrays**](./Fundamental%20Data%20Structures/Arrays/EquivalenceinArrays/) - Equals method in Arrays
+
 
 #### Linked Lists
-- [**Singly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Singly%20Linked%20Lists/) - Singly Linked List and nested Node class
-- [**Circular Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Circular%20Linked%20Lists/) - Circular Linked List and nested Node class
-- [**Doubly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Doubly%20Linked%20Lists/) - Doubly Linked List and nested Node class
-
-#### Equivalence Testing
-- [**Equivalence Testing**](./Fundamental%20Data%20Structures/Equivalence%20Testing/) - Equivalence Testing - (For Linked Lists check their respective class files)
+- [**Singly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Singly%20Linked%20Lists/) - Singly Linked List, nested Node class, Equivalent implementation and Cloning
+- [**Circular Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Circular%20Linked%20Lists/) - Circular Linked List, nested Node class, Equivalent implementation and Cloning
+- [**Doubly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Doubly%20Linked%20Lists/) - Doubly Linked List, nested Node class, Equivalent implementation and Cloning
 
 ## Repository Structure
 
@@ -37,6 +36,12 @@ DSA in Java
     │   ├───Caeser Cipher
     │   │       CaeserCipher.java
     │   │
+    │   ├───Cloning
+    │   │       CloningArrays.java
+    │   │
+    │   ├───EquivalenceinArrays
+    │   │       EquivalenceTesingArrays.java
+    │   │       
     │   ├───Game Entries
     │   │       GameEntry.java
     │   │       Scoreboard.java
@@ -49,9 +54,6 @@ DSA in Java
     │   │
     │   └───Tic Tac Toe
     │           TicTacToe.java
-    │
-    ├───Equivalence Testing
-    │       EquivalenceTesingArrays.java
     │
     └───Linked Lists
         ├───Circular Linked Lists
