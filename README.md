@@ -11,18 +11,25 @@ This repository contains theory and practical implementations of Data Structures
 ### **1. Fundamental Data Structures**
 
 #### Arrays
-- [**Game Entries**](./Fundamental%20Data%20Structures/Arrays/Game%20Entries/) - Demonstrates basic array operations including insertion, deletion, and sorting of game score entries
-- [**Insertion Sort**](./Fundamental%20Data%20Structures/Arrays/Insertion%20Sort/) - Implementation of the insertion sort algorithm with step-by-step sorting
-- [**Arrays & Random**](./Fundamental%20Data%20Structures/Arrays/RandArr/) - Exploration of array manipulation and Java's Random class methods
-- [**Caesar Cipher**](./Fundamental%20Data%20Structures/Arrays/Caeser%20Cipher/) - Classic encryption algorithm using character array transformations
-- [**Tic Tac Toe**](./Fundamental%20Data%20Structures/Arrays/Tic%20Tac%20Toe/) - Complete game implementation using 2D arrays
-- [**Equivalence in Arrays**](./Fundamental%20Data%20Structures/Arrays/EquivalenceinArrays/) - Equals method in Arrays
+- [**Game Entries**](./Fundamental%20Data%20Structures/Arrays/Game%20Entries/GameEntry.java) - Demonstrates basic array operations including insertion, deletion, and sorting of game score entries
+- [**Insertion Sort**](./Fundamental%20Data%20Structures/Arrays/Insertion%20Sort/InsertionSort.java) - Implementation of the insertion sort algorithm with step-by-step sorting
+- [**Arrays & Random**](./Fundamental%20Data%20Structures/Arrays/RandArr/ArrRand.java) - Exploration of array manipulation and Java's Random class methods
+- [**Caesar Cipher**](./Fundamental%20Data%20Structures/Arrays/Caeser%20Cipher/CaeserCipher.java) - Classic encryption algorithm using character array transformations
+- [**Tic Tac Toe**](./Fundamental%20Data%20Structures/Arrays/Tic%20Tac%20Toe/TicTacToe.java) - Complete game implementation using 2D arrays
+- [**Equivalence in Arrays**](./Fundamental%20Data%20Structures/Arrays/EquivalenceinArrays/EquivalenceTesingArrays.java) - Equals method in Arrays
 
 
 #### Linked Lists
-- [**Singly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Singly%20Linked%20Lists/) - Singly Linked List, nested Node class, Equivalent implementation and Cloning
-- [**Circular Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Circular%20Linked%20Lists/) - Circular Linked List, nested Node class, Equivalent implementation and Cloning
-- [**Doubly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Doubly%20Linked%20Lists/) - Doubly Linked List, nested Node class, Equivalent implementation and Cloning
+- [**Singly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Singly%20Linked%20Lists/SInglyLinkedList.java) - Singly Linked List, nested Node class, Equivalent implementation and Cloning
+- [**Circular Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Circular%20Linked%20Lists/CircularLinkedList.java) - Circular Linked List, nested Node class, Equivalent implementation and Cloning
+- [**Doubly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Doubly%20Linked%20Lists/DoublyLinkedList.java) - Doubly Linked List, nested Node class, Equivalent implementation and Cloning
+
+#### Exercises
+
+*Exercises independent of Classes Above are here, else in the respective class*
+
+- [**Array**](./Fundamental%20Data%20Structures/Exercises/ArrEx1.java) - Array Exercises
+
 
 ## Repository Structure
 
@@ -30,7 +37,7 @@ This repository contains theory and practical implementations of Data Structures
 DSA in Java
 │   .gitignore
 │   README.md
-│   
+│
 └───Fundamental Data Structures
     ├───Arrays
     │   ├───Caeser Cipher
@@ -41,7 +48,7 @@ DSA in Java
     │   │
     │   ├───EquivalenceinArrays
     │   │       EquivalenceTesingArrays.java
-    │   │       
+    │   │
     │   ├───Game Entries
     │   │       GameEntry.java
     │   │       Scoreboard.java
@@ -54,6 +61,9 @@ DSA in Java
     │   │
     │   └───Tic Tac Toe
     │           TicTacToe.java
+    │
+    ├───Exercises
+    │       ArrEx1.java
     │
     └───Linked Lists
         ├───Circular Linked Lists

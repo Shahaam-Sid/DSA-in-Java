@@ -94,4 +94,32 @@ public class DoublyLinkedList<E> {
         
         return true;
     }
+    @Override
+    public DoublyLinkedList<E> clone() throws CloneNotSupportedException {
+        
+        DoublyLinkedList<E> other = (DoublyLinkedList<E>) super.clone();
+        
+        if (size > 0) {
+            
+            other.header = new Node<>(null, null, null);
+            other.trailer = new Node<>(null, other.header, null);
+            other.header.setNext(other.trailer);
+            
+            Node<E> walk = header.getNext();
+            Node<E> otherPrev = other.header;
+            
+            while (walk != trailer) {
+                
+                Node<E> newest = new Node<>(walk.getElement(), otherPrev, null);
+                otherPrev.setNext(newest);
+                otherPrev = newest;
+                walk = walk.getNext();
+            }
+            
+            otherPrev.setNext(other.trailer);
+            other.trailer.setPrev(otherPrev);
+        }
+        
+        return other;
+    }
 }

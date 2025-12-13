@@ -91,12 +91,28 @@ public class CircularLinkedList<E> {
         CircularLinkedList<E> other = (CircularLinkedList<E>) super.clone();
         if (size > 0) {
             other.tail = new Node<>(tail.getElement(), null);
-            Node<E> walk = tail.getNext();
-            Node<E> temp = other.tail;
-            while (walk != temp) {
-                Node<E> newest = new Node<>(walk.getElement(), null);
-                //Incomplete
+            if (size == 1) {
+                other.tail.setNext(other.tail);
+            } else {
+                Node<E> walk = tail.getNext();
+                Node<E> otherHead = new Node<>(walk.getElement(), null);
+                other.tail.setNext(otherHead); 
+                
+                Node<E> otherCurrent = otherHead;
+                walk = walk.getNext(); 
+                
+                while (walk != tail) {
+                    Node<E> newest = new Node<>(walk.getElement(), null);
+                    otherCurrent.setNext(newest);
+                    otherCurrent = newest;
+                    walk = walk.getNext();
+                }
+                
+                
+                otherCurrent.setNext(otherHead);
             }
         }
+        
+        return other;
     }
 }
