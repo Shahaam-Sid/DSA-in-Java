@@ -89,11 +89,8 @@ public class ArrEx1 {
         }
         return sum;
     }
-    
 
-
-
-    
+    // Helper Method
     private static <T> T[] removeElement(T[] arr, int index) {
         if (index >= arr.length) {
             throw new IndexOutOfBoundsException("Index " + index + " doesnot exist for this list");
@@ -109,28 +106,4 @@ public class ArrEx1 {
 
         return newArr;
     }
-
-
-
-
-
-    public static void main(String[] args) {
-
-        int[][][] arr1 = {
-            {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}},
-            {{13, 14, 15, 16}, {17, 18, 19, 20}, {21, 22, 23, 24}}
-        };
-
-        int[][][] arr2 = {
-            {{100, 100, 100, 100}, {200, 200, 200, 200}, {300, 300, 300, 300}},
-            {{400, 400, 400, 400}, {500, 500, 500, 500}, {600, 600, 600, 600}}
-        };
-
-        int[][][] ans = threeDegreeAddition(arr1, arr2);
-
-        System.out.println(Arrays.deepToString(ans));
-
-        //Incomplete
-    }
-    
 }

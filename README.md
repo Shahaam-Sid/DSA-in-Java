@@ -11,7 +11,7 @@ This repository contains theory and practical implementations of Data Structures
 ### **1. Fundamental Data Structures**
 
 #### Arrays
-- [**Game Entries**](./Fundamental%20Data%20Structures/Arrays/Game%20Entries/GameEntry.java) - Demonstrates basic array operations including insertion, deletion, and sorting of game score entries
+- [**Game Entries**](./Fundamental%20Data%20Structures/Arrays/Game%20Entries/) - Demonstrates basic array operations including insertion, deletion, and sorting of game score entries
 - [**Insertion Sort**](./Fundamental%20Data%20Structures/Arrays/Insertion%20Sort/InsertionSort.java) - Implementation of the insertion sort algorithm with step-by-step sorting
 - [**Arrays & Random**](./Fundamental%20Data%20Structures/Arrays/RandArr/ArrRand.java) - Exploration of array manipulation and Java's Random class methods
 - [**Caesar Cipher**](./Fundamental%20Data%20Structures/Arrays/Caeser%20Cipher/CaeserCipher.java) - Classic encryption algorithm using character array transformations
@@ -28,53 +28,9 @@ This repository contains theory and practical implementations of Data Structures
 
 *Exercises independent of Classes Above are here, else in the respective class*
 
-- [**Array**](./Fundamental%20Data%20Structures/Exercises/ArrEx1.java) - Array Exercises
+- [**Array 1**](./Fundamental%20Data%20Structures/Exercises/ArrEx1.java) - Array Exercises R-3.2, C-3.17, C-3.18 and C-3.24
+- [**Array 2**](./Fundamental%20Data%20Structures/Exercises/ArrEx2.java) - Array Exercise P-3.36
 
-
-## Repository Structure
-
-```
-DSA in Java
-│   .gitignore
-│   README.md
-│
-└───Fundamental Data Structures
-    ├───Arrays
-    │   ├───Caeser Cipher
-    │   │       CaeserCipher.java
-    │   │
-    │   ├───Cloning
-    │   │       CloningArrays.java
-    │   │
-    │   ├───EquivalenceinArrays
-    │   │       EquivalenceTesingArrays.java
-    │   │
-    │   ├───Game Entries
-    │   │       GameEntry.java
-    │   │       Scoreboard.java
-    │   │
-    │   ├───Insertion Sort
-    │   │       InsertionSort.java
-    │   │
-    │   ├───RandArr
-    │   │       ArrRand.java
-    │   │
-    │   └───Tic Tac Toe
-    │           TicTacToe.java
-    │
-    ├───Exercises
-    │       ArrEx1.java
-    │
-    └───Linked Lists
-        ├───Circular Linked Lists
-        │       CircularLinkedList.java
-        │
-        ├───Doubly Linked Lists
-        │       DoublyLinkedList.java
-        │
-        └───Singly Linked Lists
-                SInglyLinkedList.java
-```
 
 ## Getting Started
 
@@ -112,6 +68,52 @@ java FileName
 - [ ] Graph Algorithms
 - [ ] Memory Management
 - [ ] B-Trees
+
+## Repository Structure
+
+```
+DSA in Java
+│   .gitignore
+│   README.md
+│   
+└───Fundamental Data Structures
+    ├───Arrays
+    │   ├───Caeser Cipher
+    │   │       CaeserCipher.java
+    │   │       
+    │   ├───Cloning
+    │   │       CloningArrays.java
+    │   │       
+    │   ├───EquivalenceinArrays
+    │   │       EquivalenceTesingArrays.java
+    │   │       
+    │   ├───Game Entries
+    │   │       GameEntry.java
+    │   │       Scoreboard.java
+    │   │       
+    │   ├───Insertion Sort
+    │   │       InsertionSort.java
+    │   │
+    │   ├───RandArr
+    │   │       ArrRand.java
+    │   │
+    │   └───Tic Tac Toe
+    │           TicTacToe.java
+    │
+    ├───Exercises
+    │       ArrEx1.java
+    │       ArrEx2.java
+    │
+    └───Linked Lists
+        ├───Circular Linked Lists
+        │       CircularLinkedList.java
+        │
+        ├───Doubly Linked Lists
+        │       DoublyLinkedList.java
+        │
+        └───Singly Linked Lists
+                SInglyLinkedList.java
+```
 
 ---
 
