@@ -1,4 +1,4 @@
-public class CircularLinkedList<E> {
+public class CircularLinkedList<E> implements Cloneable{
     private static class Node<E> {
         private E element;
         private Node<E> next;
@@ -58,6 +58,9 @@ public class CircularLinkedList<E> {
         size--;
         return head.getElement();
     }
+
+    // Exercises
+    // R-3.15
     @Override
     public boolean equals(Object o) {
         if (o == null) {return false;}
@@ -86,6 +89,7 @@ public class CircularLinkedList<E> {
         }
         return false;
     }
+    // C-3.34
     @Override
     public CircularLinkedList<E> clone() throws CloneNotSupportedException {
         CircularLinkedList<E> other = (CircularLinkedList<E>) super.clone();

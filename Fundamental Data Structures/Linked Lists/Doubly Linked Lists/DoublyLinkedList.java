@@ -1,4 +1,4 @@
-public class DoublyLinkedList<E> {
+public class DoublyLinkedList<E> implements Cloneable{
     public static class Node<E> {
         private E element;
         private Node<E> prev;
@@ -72,6 +72,9 @@ public class DoublyLinkedList<E> {
         size--;
         return node.getElement();
     }
+
+    // Exercise
+    // R-3.16
     @Override
     public boolean equals(Object o) {
         if (o == null) {return false;}
@@ -94,6 +97,7 @@ public class DoublyLinkedList<E> {
         
         return true;
     }
+    // C-3.35
     @Override
     public DoublyLinkedList<E> clone() throws CloneNotSupportedException {
         
@@ -121,5 +125,52 @@ public class DoublyLinkedList<E> {
         }
         
         return other;
+    }
+    // C-3.26
+    public static <E> DoublyLinkedList<E> concat(DoublyLinkedList<E> u,
+        DoublyLinkedList<E> v) throws CloneNotSupportedException {
+
+            if ((u == null) || (v == null)) {throw new IllegalArgumentException("List cannot be Null");}
+
+            u = u.clone();
+            v = v.clone();
+            if (u.isEmpty()) {return v;}
+            if (v.isEmpty()) {return u;}
+
+            u.size += v.size;
+
+            u.trailer.getPrev().setNext(v.header.getNext());
+            v.header.getNext().setPrev(u.trailer.getPrev());
+
+            u.trailer = v.trailer;
+
+            return u;
+    }
+
+    public static void main(String[] args) {
+        
+        try {
+
+            DoublyLinkedList<String> dll1 = new DoublyLinkedList<>();
+            DoublyLinkedList<String> dll2 = new DoublyLinkedList<>();
+
+            dll1.addFirst("Karachi");
+            dll1.addLast("Multan");
+            dll1.addLast("Lahore");
+
+            dll2.addFirst("Islamabad");
+            dll2.addLast("Murree");
+
+            DoublyLinkedList<String> l= DoublyLinkedList.concat(dll1, dll2);
+            
+            System.out.println(l.first() + l.last());
+
+
+
+            
+        } catch (CloneNotSupportedException e) {
+            System.err.println(e.getMessage());
+            e.printStackTrace();
+        }
     }
 }

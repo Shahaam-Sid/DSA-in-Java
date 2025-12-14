@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 public class SInglyLinkedList<E> implements Cloneable {
     private static class Node<E> {
         private E element;
@@ -91,5 +93,54 @@ public class SInglyLinkedList<E> implements Cloneable {
         }
         return other;
     }
-    
+
+    // Exercises
+    // R-3.6
+    public E getSecondLast() {
+        if (size < 2) {
+            throw new IndexOutOfBoundsException("Linked List contains less then 2 Nodes");
+        }
+        Node<E> curr = head;
+        Node<E> then = curr.getNext();
+
+        for (int i = 0; i < getSize() - 2; i++) {
+            if (then.getNext() ==  null) {
+                break;
+            }
+            else {
+                curr = curr.getNext();
+                then = then.getNext();
+            }
+        }
+        E sl = curr.getElement();
+
+        return sl;
+    }
+    // R-3.12
+    public void rotate() {
+        if (size < 2) {throw new NoSuchElementException("Insufficient Number of Nodes");}
+
+        tail.setNext(head);
+        head = head.getNext();
+        tail = tail.getNext();
+        tail.setNext(null);
+    }
+    // C-3.25
+    public static <E> SInglyLinkedList<E> concat(SInglyLinkedList<E> u,
+        SInglyLinkedList<E> v) throws CloneNotSupportedException {
+
+        if ((u == null) || v == null) {throw new IllegalArgumentException("List cannot be Null");}
+
+        u = u.clone();
+        v = v.clone();
+
+        if (u.isEmpty()) {return v;}
+        if (v.isEmpty()) {return u;}
+
+        u.tail.setNext(v.head);
+        u.tail = v.tail;
+        u.size = u.size + v.size;
+
+        return u;
+    }
 }
