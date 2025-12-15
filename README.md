@@ -20,9 +20,9 @@ This repository contains theory and practical implementations of Data Structures
 
 
 #### Linked Lists
-- [**Singly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Singly%20Linked%20Lists/SInglyLinkedList.java) - Singly Linked List, nested Node class, Equivalent implementation and Cloning
-- [**Circular Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Circular%20Linked%20Lists/CircularLinkedList.java) - Circular Linked List, nested Node class, Equivalent implementation and Cloning
-- [**Doubly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Doubly%20Linked%20Lists/DoublyLinkedList.java) - Doubly Linked List, nested Node class, Equivalent implementation and Cloning
+- [**Singly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Singly%20Linked%20Lists/SInglyLinkedList.java) - Singly Linked List, nested Node class, Equivalent implementation, Cloning and Ex. R-3.6, R-3.12 and C-3.25
+- [**Circular Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Circular%20Linked%20Lists/CircularLinkedList.java) - Circular Linked List, nested Node class and  Ex. R-3.15, C-3.30, C-3.34
+- [**Doubly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Doubly%20Linked%20Lists/DoublyLinkedList.java) - Doubly Linked List, nested Node class and Ex. R-3.16, C-3.35, C-3.26
 
 #### Exercises
 
@@ -30,7 +30,7 @@ This repository contains theory and practical implementations of Data Structures
 
 - [**Array 1**](./Fundamental%20Data%20Structures/Exercises/ArrEx1.java) - Array Exercises R-3.2, C-3.17, C-3.18 and C-3.24
 - [**Array 2**](./Fundamental%20Data%20Structures/Exercises/ArrEx2.java) - Array Exercise P-3.36
-
+- [**Doubly Circular LL**](./Fundamental%20Data%20Structures/Exercises/DoublyCircularLL.java) - Exercise C-3.32, Doubly Circular Linked List Implementation
 
 ## Getting Started
 
@@ -75,22 +75,22 @@ java FileName
 DSA in Java
 │   .gitignore
 │   README.md
-│   
+│
 └───Fundamental Data Structures
     ├───Arrays
     │   ├───Caeser Cipher
     │   │       CaeserCipher.java
-    │   │       
+    │   │
     │   ├───Cloning
     │   │       CloningArrays.java
-    │   │       
+    │   │
     │   ├───EquivalenceinArrays
     │   │       EquivalenceTesingArrays.java
-    │   │       
+    │   │
     │   ├───Game Entries
     │   │       GameEntry.java
     │   │       Scoreboard.java
-    │   │       
+    │   │
     │   ├───Insertion Sort
     │   │       InsertionSort.java
     │   │
@@ -103,6 +103,7 @@ DSA in Java
     ├───Exercises
     │       ArrEx1.java
     │       ArrEx2.java
+    │       DoublyCircularLL.java
     │
     └───Linked Lists
         ├───Circular Linked Lists

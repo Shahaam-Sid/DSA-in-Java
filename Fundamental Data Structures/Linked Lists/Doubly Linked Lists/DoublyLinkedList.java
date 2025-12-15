@@ -146,31 +146,4 @@ public class DoublyLinkedList<E> implements Cloneable{
 
             return u;
     }
-
-    public static void main(String[] args) {
-        
-        try {
-
-            DoublyLinkedList<String> dll1 = new DoublyLinkedList<>();
-            DoublyLinkedList<String> dll2 = new DoublyLinkedList<>();
-
-            dll1.addFirst("Karachi");
-            dll1.addLast("Multan");
-            dll1.addLast("Lahore");
-
-            dll2.addFirst("Islamabad");
-            dll2.addLast("Murree");
-
-            DoublyLinkedList<String> l= DoublyLinkedList.concat(dll1, dll2);
-            
-            System.out.println(l.first() + l.last());
-
-
-
-            
-        } catch (CloneNotSupportedException e) {
-            System.err.println(e.getMessage());
-            e.printStackTrace();
-        }
-    }
 }

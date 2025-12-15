@@ -89,6 +89,34 @@ public class CircularLinkedList<E> implements Cloneable{
         }
         return false;
     }
+    // C-3.30
+    public static <E> CircularLinkedList<E>[] divide(CircularLinkedList<E> list) {
+        if ((list.size < 2) || ((list.size & 1) == 1)) {
+            throw new IllegalArgumentException("Size of Linked List must be greater then 2 and even");
+        }
+
+        CircularLinkedList<E> firstList = new CircularLinkedList<>();
+        CircularLinkedList<E> lastList = new CircularLinkedList<>();
+
+        Node<E> curr = list.tail;
+
+        for (int i = 0; i < ((list.size) / 2); i++) {
+            curr = curr.getNext();
+            firstList.addLast(curr.getElement());
+        }
+
+        for (int i = 0; i < (list.size / 2); i++) {
+            curr = curr.getNext();
+            lastList.addLast(curr.getElement());
+        }
+
+        CircularLinkedList<E>[] output = (CircularLinkedList<E>[]) new  CircularLinkedList[2];
+
+        output[0] = firstList;
+        output[1] = lastList;
+
+        return output;
+    }
     // C-3.34
     @Override
     public CircularLinkedList<E> clone() throws CloneNotSupportedException {
