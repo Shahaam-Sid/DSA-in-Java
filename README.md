@@ -31,6 +31,7 @@ This repository contains theory and practical implementations of Data Structures
 - [**Array 1**](./Fundamental%20Data%20Structures/Exercises/ArrEx1.java) - Array Exercises R-3.2, C-3.17, C-3.18 and C-3.24
 - [**Array 2**](./Fundamental%20Data%20Structures/Exercises/ArrEx2.java) - Array Exercise P-3.36
 - [**Doubly Circular LL**](./Fundamental%20Data%20Structures/Exercises/DoublyCircularLL.java) - Exercise C-3.32, Doubly Circular Linked List Implementation
+- [**Game Entries using Singly Linked List**](./Fundamental%20Data%20Structures/Exercises/Game%20Entry/) - Exercise P-3.37, Implementation of Game Entry and Scoreboard using Singly Linked List
 
 ## Getting Started
 
@@ -75,7 +76,7 @@ java FileName
 DSA in Java
 │   .gitignore
 │   README.md
-│
+│   
 └───Fundamental Data Structures
     ├───Arrays
     │   ├───Caeser Cipher
@@ -101,9 +102,13 @@ DSA in Java
     │           TicTacToe.java
     │
     ├───Exercises
-    │       ArrEx1.java
-    │       ArrEx2.java
-    │       DoublyCircularLL.java
+    │   │   ArrEx1.java
+    │   │   ArrEx2.java
+    │   │   DoublyCircularLL.java
+    │   │
+    │   └───Game Entry
+    │           GameEntry.java
+    │           ScoreBoardLL.java
     │
     └───Linked Lists
         ├───Circular Linked Lists
