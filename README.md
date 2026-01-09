@@ -33,6 +33,18 @@ This repository contains theory and practical implementations of Data Structures
 - [**Doubly Circular LL**](./Fundamental%20Data%20Structures/Exercises/DoublyCircularLL.java) - Exercise C-3.32, Doubly Circular Linked List Implementation
 - [**Game Entries using Singly Linked List**](./Fundamental%20Data%20Structures/Exercises/Game%20Entry/) - Exercise P-3.37, Implementation of Game Entry and Scoreboard using Singly Linked List
 
+### **2. Algorithm Analysis**
+
+#### Experimental Studies
+- [**Tracking Time**](./Algorithm%20Analysis/Tracking%20Time/TimeTrack.java) - Tracking time taken for algorithm
+
+### **3. Recursion**
+
+#### Illustrative Examples
+- [**Factorial**](./Recursion/Examples/Factorial.java) - Recursive Algorithm for Factorial (!)
+- [**Ruler**](./Recursion/Examples/Ruler.java) - Prints a Ruler using Recursion
+- [**Binary Search**](./Recursion/Examples/BinarySearch.java) - Binary Seach Implementation using Array
+
 ## Getting Started
 
 ### Prerequisites
@@ -51,7 +63,7 @@ java FileName
 
 - [x] Arrays
 - [x] Linked Lists
-- [ ] Algorithm Analysis
+- [x] Algorithm Analysis
 - [ ] Recursion
 - [ ] Stacks
 - [ ] Queues
@@ -110,15 +122,21 @@ DSA in Java
     │           GameEntry.java
     │           ScoreBoardLL.java
     │
-    └───Linked Lists
-        ├───Circular Linked Lists
-        │       CircularLinkedList.java
-        │
-        ├───Doubly Linked Lists
-        │       DoublyLinkedList.java
-        │
-        └───Singly Linked Lists
-                SInglyLinkedList.java
+    ├───Linked Lists
+    │   ├───Circular Linked Lists
+    │   │       CircularLinkedList.java
+    │   │
+    │   ├───Doubly Linked Lists
+    │   │       DoublyLinkedList.java
+    │   │
+    │   └───Singly Linked Lists
+    │           SInglyLinkedList.java
+    │
+    └───Recursion
+        └───Examples
+                Factorial.java
+                Ruler.java
+                BinarySearch.java
 ```
 
 ---

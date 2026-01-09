@@ -1,4 +1,3 @@
-
 public class ArrEx2 { // P-3.36
     private int[][] arr1, arr2;
     private int rowArr1, rowArr2, columnArr1, columnArr2;
