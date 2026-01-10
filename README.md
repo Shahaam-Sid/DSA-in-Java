@@ -44,6 +44,11 @@ This repository contains theory and practical implementations of Data Structures
 - [**Factorial**](./Recursion/Examples/Factorial.java) - Recursive Algorithm for Factorial (!)
 - [**Ruler**](./Recursion/Examples/Ruler.java) - Prints a Ruler using Recursion
 - [**Binary Search**](./Recursion/Examples/BinarySearch.java) - Binary Seach Implementation using Array
+- [**File System**](./Recursion/Examples/FileSys.java) - Calculate Disk Usage of Directories & Files using Recursion
+
+#### Further Examples
+- [**Linear Recursion**](./Recursion/Further%20Examples/LinearRecursion.java) - Linear Recursion Examples, Summation of Array, Reversal of Array and two versions of Power Calculations
+
 
 ## Getting Started
 
@@ -133,10 +138,14 @@ DSA in Java
     │           SInglyLinkedList.java
     │
     └───Recursion
-        └───Examples
-                Factorial.java
-                Ruler.java
-                BinarySearch.java
+        ├───Examples
+        │       Factorial.java
+        │       Ruler.java
+        │       BinarySearch.java
+        │       FileSys.java
+        │
+        └───Further Examples
+                LinearRecursion.java
 ```
 
 ---

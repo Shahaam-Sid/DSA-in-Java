@@ -16,13 +16,4 @@ public class BinarySearch {
         }
         return i;
     }
-    public static void main(String[] args) {
-        int[] nums = {3, 17, 24, 38, 42, 56, 61, 71, 89, 95};
-        int len = nums.length;
-
-        int i = search(nums, 56, 0, len);
-
-        System.out.println((i == -1) ? "Element Not Found" : "Element found at Index " + i);
-
-    }
 }

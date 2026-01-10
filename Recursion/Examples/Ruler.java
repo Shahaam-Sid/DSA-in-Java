@@ -27,8 +27,4 @@ public class Ruler {
     private static void drawLine(int tickLenght) {
         drawLine(tickLenght, -1);
     }
-    public static void main(String[] args) {
-        drawInterval(2);
-    }
-
 }
