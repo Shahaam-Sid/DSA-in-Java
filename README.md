@@ -48,6 +48,8 @@ This repository contains theory and practical implementations of Data Structures
 
 #### Further Examples
 - [**Linear Recursion**](./Recursion/Further%20Examples/LinearRecursion.java) - Linear Recursion Examples, Summation of Array, Reversal of Array and two versions of Power Calculations
+- [**Binary Recursion**](./Recursion/Further%20Examples/BinaryRecursion.java) - Binary Recursion Example, Binary Summation
+- [**Multiple Recursion**](./Recursion/Further%20Examples/BinaryRecursion.java) - Multiple Recursion Example, Puzzle Solve
 
 
 ## Getting Started
@@ -146,6 +148,8 @@ DSA in Java
         │
         └───Further Examples
                 LinearRecursion.java
+                BinaryRecursion.java
+                MultipleRecursion.java
 ```
 
 ---

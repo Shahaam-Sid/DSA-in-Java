@@ -2,7 +2,8 @@ public class LinearRecursion {
     public static int sumArray(int[] arr, int lastIndex) {
         
         if (arr.length < lastIndex) {throw new IllegalArgumentException("lastIndex cannot be more then size of array");}
-        if (lastIndex == 0) return 0; else {
+        if (lastIndex == 0) return 0;
+        else {
             return sumArray(arr, lastIndex - 1) + arr[lastIndex - 1];
         }
     }
