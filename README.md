@@ -49,7 +49,10 @@ This repository contains theory and practical implementations of Data Structures
 #### Further Examples
 - [**Linear Recursion**](./Recursion/Further%20Examples/LinearRecursion.java) - Linear Recursion Examples, Summation of Array, Reversal of Array and two versions of Power Calculations
 - [**Binary Recursion**](./Recursion/Further%20Examples/BinaryRecursion.java) - Binary Recursion Example, Binary Summation
-- [**Multiple Recursion**](./Recursion/Further%20Examples/BinaryRecursion.java) - Multiple Recursion Example, Puzzle Solve
+- [**Multiple Recursion**](./Recursion/Further%20Examples/MultipleRecursion.java) - Multiple Recursion Example, Puzzle Solve
+
+#### Amok Recursion
+- [**Fibonacci Sequence**](./Recursion/Amok%20Recursion/Fibbonaci.java) - Good (Efficient) and Bad (Inefficient) Recursive Functions for Fibonacci Sequence
 
 
 ## Getting Started
@@ -71,7 +74,7 @@ java FileName
 - [x] Arrays
 - [x] Linked Lists
 - [x] Algorithm Analysis
-- [ ] Recursion
+- [x] Recursion
 - [ ] Stacks
 - [ ] Queues
 - [ ] Deques
@@ -96,60 +99,67 @@ DSA in Java
 │   .gitignore
 │   README.md
 │   
-└───Fundamental Data Structures
-    ├───Arrays
-    │   ├───Caeser Cipher
-    │   │       CaeserCipher.java
-    │   │
-    │   ├───Cloning
-    │   │       CloningArrays.java
-    │   │
-    │   ├───EquivalenceinArrays
-    │   │       EquivalenceTesingArrays.java
-    │   │
-    │   ├───Game Entries
-    │   │       GameEntry.java
-    │   │       Scoreboard.java
-    │   │
-    │   ├───Insertion Sort
-    │   │       InsertionSort.java
-    │   │
-    │   ├───RandArr
-    │   │       ArrRand.java
-    │   │
-    │   └───Tic Tac Toe
-    │           TicTacToe.java
+├───Algorithm Analysis
+│   └───Tracking Time
+│           TimeTrack.java
+│
+├───Fundamental Data Structures
+│   ├───Arrays
+│   │   ├───Caeser Cipher
+│   │   │       CaeserCipher.java
+│   │   │
+│   │   ├───Cloning
+│   │   │       CloningArrays.java
+│   │   │
+│   │   ├───EquivalenceinArrays
+│   │   │       EquivalenceTesingArrays.java
+│   │   │
+│   │   ├───Game Entries
+│   │   │       GameEntry.java
+│   │   │       Scoreboard.java
+│   │   │
+│   │   ├───Insertion Sort
+│   │   │       InsertionSort.java
+│   │   │
+│   │   ├───RandArr
+│   │   │       ArrRand.java
+│   │   │
+│   │   └───Tic Tac Toe
+│   │           TicTacToe.java
+│   │
+│   ├───Exercises
+│   │   │   ArrEx1.java
+│   │   │   ArrEx2.java
+│   │   │   DoublyCircularLL.java
+│   │   │
+│   │   └───Game Entry
+│   │           GameEntry.java
+│   │           ScoreBoardLL.java
+│   │
+│   └───Linked Lists
+│       ├───Circular Linked Lists
+│       │       CircularLinkedList.java
+│       │
+│       ├───Doubly Linked Lists
+│       │       DoublyLinkedList.java
+│       │
+│       └───Singly Linked Lists
+│               SInglyLinkedList.java
+│
+└───Recursion
+    ├───Amok Recursion
+    │       Fibbonaci.java
     │
-    ├───Exercises
-    │   │   ArrEx1.java
-    │   │   ArrEx2.java
-    │   │   DoublyCircularLL.java
-    │   │
-    │   └───Game Entry
-    │           GameEntry.java
-    │           ScoreBoardLL.java
+    ├───Examples
+    │       BinarySearch.java
+    │       Factorial.java
+    │       FileSys.java
+    │       Ruler.java
     │
-    ├───Linked Lists
-    │   ├───Circular Linked Lists
-    │   │       CircularLinkedList.java
-    │   │
-    │   ├───Doubly Linked Lists
-    │   │       DoublyLinkedList.java
-    │   │
-    │   └───Singly Linked Lists
-    │           SInglyLinkedList.java
-    │
-    └───Recursion
-        ├───Examples
-        │       Factorial.java
-        │       Ruler.java
-        │       BinarySearch.java
-        │       FileSys.java
-        │
-        └───Further Examples
-                LinearRecursion.java
-                BinaryRecursion.java
-                MultipleRecursion.java
+    └───Further Examples
+            BinaryRecursion.java
+            LinearRecursion.java
+            MultipleRecursion.java
 ```
 
 ---
