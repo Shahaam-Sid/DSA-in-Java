@@ -1,25 +1,34 @@
- // TODO: Complete this correctly
+public class ExOne { // R-5.1
+    private static int maxElement(int[] arr, int startIndex, int currMax) {
+        if (startIndex >= arr.length) return currMax;
 
-public class ExOne {
-    public static int maxElement(int[] arr, int startIndex, int startValue) {
+        int k;
+        if (arr[startIndex] > currMax) k = arr[startIndex];
+        else k = currMax;
         
-        if (startIndex >= arr.length) {
-            int k = maxElement(arr, startIndex + 1, startValue);
-        
-        
-            if (arr[startIndex] > startValue) k = arr[startIndex];
-            else k = startValue;
-            
-            return k;
-        }
-        return startValue;
+        return maxElement(arr, startIndex + 1, k);
     }
-    public static void main(String[] args) {
+    public static int maxElement(int[] arr) {
+        if (arr == null || arr.length == 0) throw new IllegalArgumentException("Array Cannot be Empty");
         
-        int[] nums = {1, 4, 2, 6, 2, 8, 3};
+        return maxElement(arr, 0, arr[0]);
+    }
 
-        int i = maxElement(nums, 0, -1000);
+    //R-5.9
+    public static double powerIterative(double x, int n) {
+        if (n < 0) {throw new IllegalArgumentException("Power must to be more then 0");}
+        if (n == 0) {return 1;}
 
-        System.out.println(i);
+        double result = 1.0;
+        double base = x;
+        int exponent = n;
+
+        while (exponent > 0) {
+            if ((exponent & 1) == 1) result *= base;
+
+            base *= base;
+            exponent /= 2;
+        }
+        return result;
     }
 }

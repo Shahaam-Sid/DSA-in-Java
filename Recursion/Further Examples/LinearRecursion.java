@@ -25,9 +25,10 @@ public class LinearRecursion {
     }
     public static double powerSlow(double x, int n) {
         // Slower way to Computer power
-        if (n < 0) {throw new IllegalArgumentException("Power must to be less then 0");}
+        if (n < 0) {throw new IllegalArgumentException("Power must to be more then 0");}
 
-        if (n == 0) return 1; else {
+        if (n == 0) return 1;
+        else {
             return x * powerSlow(x, n - 1);
         }
     }
@@ -35,7 +36,8 @@ public class LinearRecursion {
         // Faster way to Computer power
         if (n < 0) {throw new IllegalArgumentException("Power must to be less then 0");}
 
-        if (n == 0) return 1; else {
+        if (n == 0) return 1;
+        else {
             double partial = powerFast(x, n / 2);
             double result = partial * partial;
             if ((n % 2) == 1) result *= x;

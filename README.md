@@ -54,6 +54,9 @@ This repository contains theory and practical implementations of Data Structures
 #### Amok Recursion
 - [**Fibonacci Sequence**](./Recursion/Amok%20Recursion/Fibbonaci.java) - Good (Efficient) and Bad (Inefficient) Recursive Functions for Fibonacci Sequence
 
+#### Exercises
+- [**Exercise One**](./Recursion/Exercises/ExOne.java) - Exercises R-5.1 and R-5.9
+- [**Exercise Two**](./Recursion/Exercises/ExTwo.tldr) - Exercises R-5.3
 
 ## Getting Started
 
@@ -156,10 +159,14 @@ DSA in Java
     │       FileSys.java
     │       Ruler.java
     │
-    └───Further Examples
-            BinaryRecursion.java
-            LinearRecursion.java
-            MultipleRecursion.java
+    ├───Further Examples
+    │       BinaryRecursion.java
+    │       LinearRecursion.java
+    │       MultipleRecursion.java
+    │
+    └──Exercises
+            ExOne.java
+            ExTwo.tldr
 ```
 
 ---
