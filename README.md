@@ -55,14 +55,16 @@ This repository contains theory and practical implementations of Data Structures
 - [**Fibonacci Sequence**](./Recursion/Amok%20Recursion/Fibbonaci.java) - Good (Efficient) and Bad (Inefficient) Recursive Functions for Fibonacci Sequence
 
 #### Exercises
-- [**Exercise One**](./Recursion/Exercises/ExOne.java) - Exercises R-5.1 and R-5.9
-- [**Exercise Two**](./Recursion/Exercises/ExTwo.tldr) - Exercises R-5.3
+- [**Exercise One**](./Recursion/Exercises/ExOne.java) - Exercises R-5.1, R-5.9, C-5.13, C-5.17, C-5.22
+- [**Exercise Two**](./Recursion/Exercises/ExTwo.png) - Exercises R-5.3, R-5.4 and R-5.5
 
 ## Getting Started
 
 ### Prerequisites
 - Java Development Kit (JDK) 8 or higher
 - Any Java IDE (IntelliJ IDEA, Eclipse, VS Code) or text editor
+- tldraw vs code extension for opening tldraw files
+
 
 ### Running the Code
 Navigate to any implementation directory and compile/run the Java files:
@@ -94,80 +96,6 @@ java FileName
 - [ ] Graph Algorithms
 - [ ] Memory Management
 - [ ] B-Trees
-
-## Repository Structure
-
-```
-DSA in Java
-│   .gitignore
-│   README.md
-│   
-├───Algorithm Analysis
-│   └───Tracking Time
-│           TimeTrack.java
-│
-├───Fundamental Data Structures
-│   ├───Arrays
-│   │   ├───Caeser Cipher
-│   │   │       CaeserCipher.java
-│   │   │
-│   │   ├───Cloning
-│   │   │       CloningArrays.java
-│   │   │
-│   │   ├───EquivalenceinArrays
-│   │   │       EquivalenceTesingArrays.java
-│   │   │
-│   │   ├───Game Entries
-│   │   │       GameEntry.java
-│   │   │       Scoreboard.java
-│   │   │
-│   │   ├───Insertion Sort
-│   │   │       InsertionSort.java
-│   │   │
-│   │   ├───RandArr
-│   │   │       ArrRand.java
-│   │   │
-│   │   └───Tic Tac Toe
-│   │           TicTacToe.java
-│   │
-│   ├───Exercises
-│   │   │   ArrEx1.java
-│   │   │   ArrEx2.java
-│   │   │   DoublyCircularLL.java
-│   │   │
-│   │   └───Game Entry
-│   │           GameEntry.java
-│   │           ScoreBoardLL.java
-│   │
-│   └───Linked Lists
-│       ├───Circular Linked Lists
-│       │       CircularLinkedList.java
-│       │
-│       ├───Doubly Linked Lists
-│       │       DoublyLinkedList.java
-│       │
-│       └───Singly Linked Lists
-│               SInglyLinkedList.java
-│
-└───Recursion
-    ├───Amok Recursion
-    │       Fibbonaci.java
-    │
-    ├───Examples
-    │       BinarySearch.java
-    │       Factorial.java
-    │       FileSys.java
-    │       Ruler.java
-    │
-    ├───Further Examples
-    │       BinaryRecursion.java
-    │       LinearRecursion.java
-    │       MultipleRecursion.java
-    │
-    └──Exercises
-            ExOne.java
-            ExTwo.tldr
-```
 
 ---
 
