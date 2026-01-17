@@ -58,6 +58,13 @@ This repository contains theory and practical implementations of Data Structures
 - [**Exercise One**](./Recursion/Exercises/ExOne.java) - Exercises R-5.1, R-5.9, C-5.13, C-5.17, C-5.22
 - [**Exercise Two**](./Recursion/Exercises/ExTwo.png) - Exercises R-5.3, R-5.4 and R-5.5
 
+### **4. Stacks, Queues and Deques**
+
+#### Stacks
+- [**Stack Interface**](./Stacks,%20Queues%20and%20Deques/Stacks/Stack.java) - Interface for Stack ADT
+- [**Array Stack**](./Stacks,%20Queues%20and%20Deques/Stacks/ArrayStack.java) - Array Based implementation of Stack
+- [**Linked List Stack**](./Stacks,%20Queues%20and%20Deques/Stacks/LLStack.java) - Linked List based implementation of Stack
+
 ## Getting Started
 
 ### Prerequisites
@@ -80,7 +87,7 @@ java FileName
 - [x] Linked Lists
 - [x] Algorithm Analysis
 - [x] Recursion
-- [ ] Stacks
+- [x] Stacks
 - [ ] Queues
 - [ ] Deques
 - [ ] List and Iterator ADTs
