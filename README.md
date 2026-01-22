@@ -11,6 +11,7 @@ This repository contains theory and practical implementations of Data Structures
 ### **1. Fundamental Data Structures**
 
 #### Arrays
+
 - [**Game Entries**](./Fundamental%20Data%20Structures/Arrays/Game%20Entries/) - Demonstrates basic array operations including insertion, deletion, and sorting of game score entries
 - [**Insertion Sort**](./Fundamental%20Data%20Structures/Arrays/Insertion%20Sort/InsertionSort.java) - Implementation of the insertion sort algorithm with step-by-step sorting
 - [**Arrays & Random**](./Fundamental%20Data%20Structures/Arrays/RandArr/ArrRand.java) - Exploration of array manipulation and Java's Random class methods
@@ -18,8 +19,8 @@ This repository contains theory and practical implementations of Data Structures
 - [**Tic Tac Toe**](./Fundamental%20Data%20Structures/Arrays/Tic%20Tac%20Toe/TicTacToe.java) - Complete game implementation using 2D arrays
 - [**Equivalence in Arrays**](./Fundamental%20Data%20Structures/Arrays/EquivalenceinArrays/EquivalenceTesingArrays.java) - Equals method in Arrays
 
-
 #### Linked Lists
+
 - [**Singly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Singly%20Linked%20Lists/SInglyLinkedList.java) - Singly Linked List, nested Node class, Equivalent implementation, Cloning and Ex. R-3.6, R-3.12 and C-3.25
 - [**Circular Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Circular%20Linked%20Lists/CircularLinkedList.java) - Circular Linked List, nested Node class and  Ex. R-3.15, C-3.30, C-3.34
 - [**Doubly Linked List**](./Fundamental%20Data%20Structures/Linked%20Lists/Doubly%20Linked%20Lists/DoublyLinkedList.java) - Doubly Linked List, nested Node class and Ex. R-3.16, C-3.35, C-3.26
@@ -36,44 +37,55 @@ This repository contains theory and practical implementations of Data Structures
 ### **2. Algorithm Analysis**
 
 #### Experimental Studies
+
 - [**Tracking Time**](./Algorithm%20Analysis/Tracking%20Time/TimeTrack.java) - Tracking time taken for algorithm
 
 ### **3. Recursion**
 
 #### Illustrative Examples
+
 - [**Factorial**](./Recursion/Examples/Factorial.java) - Recursive Algorithm for Factorial (!)
 - [**Ruler**](./Recursion/Examples/Ruler.java) - Prints a Ruler using Recursion
 - [**Binary Search**](./Recursion/Examples/BinarySearch.java) - Binary Seach Implementation using Array
 - [**File System**](./Recursion/Examples/FileSys.java) - Calculate Disk Usage of Directories & Files using Recursion
 
 #### Further Examples
+
 - [**Linear Recursion**](./Recursion/Further%20Examples/LinearRecursion.java) - Linear Recursion Examples, Summation of Array, Reversal of Array and two versions of Power Calculations
 - [**Binary Recursion**](./Recursion/Further%20Examples/BinaryRecursion.java) - Binary Recursion Example, Binary Summation
 - [**Multiple Recursion**](./Recursion/Further%20Examples/MultipleRecursion.java) - Multiple Recursion Example, Puzzle Solve
 
 #### Amok Recursion
+
 - [**Fibonacci Sequence**](./Recursion/Amok%20Recursion/Fibbonaci.java) - Good (Efficient) and Bad (Inefficient) Recursive Functions for Fibonacci Sequence
 
 #### Exercises
+
 - [**Exercise One**](./Recursion/Exercises/ExOne.java) - Exercises R-5.1, R-5.9, C-5.13, C-5.17, C-5.22
 - [**Exercise Two**](./Recursion/Exercises/ExTwo.png) - Exercises R-5.3, R-5.4 and R-5.5
 
 ### **4. Stacks, Queues and Deques**
 
 #### Stacks
+
 - [**Stack Interface**](./Stacks,%20Queues%20and%20Deques/Stacks/Stack.java) - Interface for Stack ADT
 - [**Array Stack**](./Stacks,%20Queues%20and%20Deques/Stacks/ArrayStack.java) - Array Based implementation of Stack
 - [**Linked List Stack**](./Stacks,%20Queues%20and%20Deques/Stacks/LLStack.java) - Linked List based implementation of Stack
+- [**Array Reversal using Stack**](./Stacks,%20Queues%20and%20Deques/Stacks/ArrayReversal.java) - Array Revesal Algorithm using Array Based Stack Implementation
+- [**Delimiters Check**](./Stacks,%20Queues%20and%20Deques/Stacks/Delimters.java) - Checking Delimiters and HTML Tags using Stack
+
+
 
 ## Getting Started
 
 ### Prerequisites
+
 - Java Development Kit (JDK) 8 or higher
 - Any Java IDE (IntelliJ IDEA, Eclipse, VS Code) or text editor
 - tldraw vs code extension for opening tldraw files
 
-
 ### Running the Code
+
 Navigate to any implementation directory and compile/run the Java files:
 
 ```bash

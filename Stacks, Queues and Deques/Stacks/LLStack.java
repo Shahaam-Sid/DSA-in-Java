@@ -1,3 +1,9 @@
+/*
+ => LL Based Stake is efficient as
+    it is more flexible then Array Based
+    as it storage can be added and removed
+*/
+
 public class LLStack<E> implements Stack<E>{
     private SInglyLinkedList<E> list = new SInglyLinkedList<>();
     

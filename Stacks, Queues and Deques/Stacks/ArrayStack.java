@@ -1,3 +1,9 @@
+/*
+ => Array based Stack is Inefficient
+    As it alots memory proir, which may not be used
+    It also limits user to memory reserved
+*/
+
 public class ArrayStack<E> implements Stack<E> {
     public static final int CAPACITY = 1000;
     private E[] data;
