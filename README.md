@@ -74,7 +74,12 @@ This repository contains theory and practical implementations of Data Structures
 - [**Array Reversal using Stack**](./Stacks,%20Queues%20and%20Deques/Stacks/ArrayReversal.java) - Array Revesal Algorithm using Array Based Stack Implementation
 - [**Delimiters Check**](./Stacks,%20Queues%20and%20Deques/Stacks/Delimters.java) - Checking Delimiters and HTML Tags using Stack
 
+#### Queues
 
+- [**Queue Interface**](./Stacks,%20Queues%20and%20Deques/Queue/Queue.java) - Interface for Queue ADT
+- [**Array Queue**](./Stacks,%20Queues%20and%20Deques/Queue/QueueArray.java) - Array based implementation of Queue
+- [**Linked List Queue**](./Stacks,%20Queues%20and%20Deques/Queue/QueueLL.java) - Linked List based implementation of Queue
+- [**Cicular Queue Interface**](./Stacks,%20Queues%20and%20Deques/Queue/QueueCLLIF.java) - Interface for Circular Queue
 
 ## Getting Started
 
@@ -100,7 +105,7 @@ java FileName
 - [x] Algorithm Analysis
 - [x] Recursion
 - [x] Stacks
-- [ ] Queues
+- [x] Queues
 - [ ] Deques
 - [ ] List and Iterator ADTs
 - [ ] Trees
