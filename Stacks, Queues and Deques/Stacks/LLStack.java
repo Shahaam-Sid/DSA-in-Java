@@ -19,5 +19,4 @@ public class LLStack<E> implements Stack<E>{
     public E top() {return list.first();}
     @Override
     public E pop() {return list.removeFirst();}
-
 }

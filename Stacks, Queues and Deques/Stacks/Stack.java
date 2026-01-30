@@ -35,5 +35,4 @@ public interface Stack<E> {
      * @return top element (null if empty)
      */
     E pop();
-
 }

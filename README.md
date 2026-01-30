@@ -80,7 +80,14 @@ This repository contains theory and practical implementations of Data Structures
 - [**Array Queue**](./Stacks,%20Queues%20and%20Deques/Queue/QueueArray.java) - Array based implementation of Queue
 - [**Linked List Queue**](./Stacks,%20Queues%20and%20Deques/Queue/QueueLL.java) - Linked List based implementation of Queue
 - [**Cicular Queue Interface**](./Stacks,%20Queues%20and%20Deques/Queue/QueueCLLIF.java) - Interface for Circular Queue
+- [**Circuler Linked List Queue**](./Stacks,%20Queues%20and%20Deques/Queue/QueueCLL.java) - Circular Linked List based implementation of Queue
+- [**Josephus Problem**](./Stacks,%20Queues%20and%20Deques/Queue/Josephus.java) - Game implementation of Josephus problem using Circuler Linked List based Queue
 
+#### Deques
+
+-[**Deque Interface**](./Stacks,%20Queues%20and%20Deques/Deque/Deque.java) - Interface for Deque ADT
+-[**Array Deque**](./Stacks,%20Queues%20and%20Deques/Deque/ArrayDeque.java) - Array based implementation of Deque
+-[**Linked List Deque**](./Stacks,%20Queues%20and%20Deques/Deque/LLDeque.java) - Linked List based implementation of Deque
 ## Getting Started
 
 ### Prerequisites
@@ -106,7 +113,7 @@ java FileName
 - [x] Recursion
 - [x] Stacks
 - [x] Queues
-- [ ] Deques
+- [x] Deques
 - [ ] List and Iterator ADTs
 - [ ] Trees
 - [ ] Priority Queues
