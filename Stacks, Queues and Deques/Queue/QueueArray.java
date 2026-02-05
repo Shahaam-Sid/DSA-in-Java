@@ -1,4 +1,4 @@
-public class QueueArray<E> implements Queue<E> {
+public class QueueArray<E> implements Queue<E>, Cloneable {
 
     private E[] data;
     private int f = 0;
@@ -32,5 +32,14 @@ public class QueueArray<E> implements Queue<E> {
         f = (f + 1) % data.length;
         sz--;
         return answer;
+    }
+    // C-6.28
+    @Override
+    public QueueArray<E> clone() throws CloneNotSupportedException {
+        QueueArray<E> newQueue = (QueueArray<E>) super.clone();
+
+        newQueue.data = data.clone();
+
+        return newQueue;
     }
 }

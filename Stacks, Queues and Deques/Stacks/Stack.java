@@ -35,4 +35,23 @@ public interface Stack<E> {
      * @return top element (null if empty)
      */
     E pop();
+
+    // R-6.4
+    public static <E> void transfer(Stack<E> s, Stack<E> t) throws IllegalStateException {
+        
+        if (s.isEmpty()) {throw new IllegalStateException("Original Stack is Empty");}
+        if (!t.isEmpty()) {throw new IllegalStateException("New Stack is not Empty");}
+
+        int size = s.size();
+        for (int i = 0; i < size; i++) {
+            t.push(s.pop());
+        }
+    }
+    public static <E> void clearStack(Stack<E> s)
+    {
+        if (s.isEmpty()) {return;}
+
+        s.pop();
+        clearStack(s);
+    }
 }

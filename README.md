@@ -68,26 +68,29 @@ This repository contains theory and practical implementations of Data Structures
 
 #### Stacks
 
-- [**Stack Interface**](./Stacks,%20Queues%20and%20Deques/Stacks/Stack.java) - Interface for Stack ADT
+- [**Stack Interface**](./Stacks,%20Queues%20and%20Deques/Stacks/Stack.java) - Interface for Stack ADT and Exercises R-6.4, R-6.6
 - [**Array Stack**](./Stacks,%20Queues%20and%20Deques/Stacks/ArrayStack.java) - Array Based implementation of Stack
 - [**Linked List Stack**](./Stacks,%20Queues%20and%20Deques/Stacks/LLStack.java) - Linked List based implementation of Stack
 - [**Array Reversal using Stack**](./Stacks,%20Queues%20and%20Deques/Stacks/ArrayReversal.java) - Array Revesal Algorithm using Array Based Stack Implementation
 - [**Delimiters Check**](./Stacks,%20Queues%20and%20Deques/Stacks/Delimters.java) - Checking Delimiters and HTML Tags using Stack
+- [**Exercise**](./Stacks,%20Queues%20and%20Deques/Stacks/StackEx.java) - Exercises C-6.19, P-3.65
 
 #### Queues
 
 - [**Queue Interface**](./Stacks,%20Queues%20and%20Deques/Queue/Queue.java) - Interface for Queue ADT
-- [**Array Queue**](./Stacks,%20Queues%20and%20Deques/Queue/QueueArray.java) - Array based implementation of Queue
-- [**Linked List Queue**](./Stacks,%20Queues%20and%20Deques/Queue/QueueLL.java) - Linked List based implementation of Queue
+- [**Array Queue**](./Stacks,%20Queues%20and%20Deques/Queue/QueueArray.java) - Array based implementation of Queue and Exercise C-6.28
+- [**Linked List Queue**](./Stacks,%20Queues%20and%20Deques/Queue/QueueLL.java) - Linked List based implementation of Queue and Exercise C-6.29
 - [**Cicular Queue Interface**](./Stacks,%20Queues%20and%20Deques/Queue/QueueCLLIF.java) - Interface for Circular Queue
 - [**Circuler Linked List Queue**](./Stacks,%20Queues%20and%20Deques/Queue/QueueCLL.java) - Circular Linked List based implementation of Queue
 - [**Josephus Problem**](./Stacks,%20Queues%20and%20Deques/Queue/Josephus.java) - Game implementation of Josephus problem using Circuler Linked List based Queue
+- [**Exercise**](./Stacks,%20Queues%20and%20Deques/Queue/QueueEx.java) - Exercise P-6.36
 
 #### Deques
 
--[**Deque Interface**](./Stacks,%20Queues%20and%20Deques/Deque/Deque.java) - Interface for Deque ADT
--[**Array Deque**](./Stacks,%20Queues%20and%20Deques/Deque/ArrayDeque.java) - Array based implementation of Deque
--[**Linked List Deque**](./Stacks,%20Queues%20and%20Deques/Deque/LLDeque.java) - Linked List based implementation of Deque
+- [**Deque Interface**](./Stacks,%20Queues%20and%20Deques/Deque/Deque.java) - Interface for Deque ADT
+- [**Array Deque**](./Stacks,%20Queues%20and%20Deques/Deque/ArrayDeque.java) - Exercise P-6.40 Array based implementation of Deque
+- [**Linked List Deque**](./Stacks,%20Queues%20and%20Deques/Deque/LLDeque.java) - Linked List based implementation of Deque
+
 ## Getting Started
 
 ### Prerequisites

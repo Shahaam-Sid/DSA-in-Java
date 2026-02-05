@@ -1,3 +1,4 @@
+// P-6.40
 public class ArrayDeque<E> implements Deque<E> {
     private E[] data;
     private int f = 0;

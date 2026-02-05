@@ -4,7 +4,7 @@
     It also limits user to memory reserved
 */
 
-public class ArrayStack<E> implements Stack<E> {
+public class ArrayStack<E> implements Stack<E>, Cloneable {
     public static final int CAPACITY = 1000;
     private E[] data;
     private int t = -1;
@@ -37,5 +37,14 @@ public class ArrayStack<E> implements Stack<E> {
         data[t] = null;
         t--;
         return answer;
+    }
+    // C-6.27
+    @Override
+    public ArrayStack<E> clone() throws CloneNotSupportedException {
+        ArrayStack<E> newStack = (ArrayStack<E>) super.clone();
+        
+        newStack.data = data.clone();
+        
+        return newStack;
     }
 }

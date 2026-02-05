@@ -11,4 +11,14 @@ public class QueueLL<E> implements Queue<E> {
     public E first() {return list.first();}
     @Override
     public E dequeue() {return list.removeFirst();}
+
+    // C-6.29
+    public void concat(QueueLL<E> Q2) {
+        if (Q2.isEmpty()) {}
+
+        int sz = Q2.size();
+        for (int i = 0; i < sz; i++) {
+            enqueue(Q2.dequeue());
+        }
+    }
 }
