@@ -91,6 +91,23 @@ This repository contains theory and practical implementations of Data Structures
 - [**Array Deque**](./Stacks,%20Queues%20and%20Deques/Deque/ArrayDeque.java) - Exercise P-6.40 Array based implementation of Deque
 - [**Linked List Deque**](./Stacks,%20Queues%20and%20Deques/Deque/LLDeque.java) - Linked List based implementation of Deque
 
+### **5. List and Iterator ADTs
+
+#### List ADT
+
+- [**List ADT Interface**](./List%20and%20Iterators/List%20ADT/ListC.java) - Interface of List ADT
+
+#### Lists
+
+- [**Static ArrayList**](./List%20and%20Iterators/Lists/ArrayListC.java) - Implementation of Static Array List
+- [**Dynamic ArrayList**](./List%20and%20Iterators/Lists/DynamicArrayListC.java) - Implementation of Dynamic Array List
+
+#### Positional Lists
+
+- [**Position Interface**](./List%20and%20Iterators/Positional%20Lists/Position.java) - Interface for Positions
+- [**Positional Lists Interface**](./List%20and%20Iterators/Positional%20Lists/PositionalLists.java) - Interface for Positional Lists
+- [**Linked Positional List**](./List%20and%20Iterators/Positional%20Lists/LinkedPositionalList.java) - Doubly Linked List based Implementation for Positional List
+
 ## Getting Started
 
 ### Prerequisites
