@@ -91,7 +91,7 @@ This repository contains theory and practical implementations of Data Structures
 - [**Array Deque**](./Stacks,%20Queues%20and%20Deques/Deque/ArrayDeque.java) - Exercise P-6.40 Array based implementation of Deque
 - [**Linked List Deque**](./Stacks,%20Queues%20and%20Deques/Deque/LLDeque.java) - Linked List based implementation of Deque
 
-### **5. List and Iterator ADTs
+### **5. List and Iterator ADTs**
 
 #### List ADT
 
@@ -100,13 +100,22 @@ This repository contains theory and practical implementations of Data Structures
 #### Lists
 
 - [**Static ArrayList**](./List%20and%20Iterators/Lists/ArrayListC.java) - Implementation of Static Array List
-- [**Dynamic ArrayList**](./List%20and%20Iterators/Lists/DynamicArrayListC.java) - Implementation of Dynamic Array List
+- [**Dynamic ArrayList**](./List%20and%20Iterators/Lists/DynamicArrayListC.java) - Implementation of Dynamic Array List and Iterator implementation
 
 #### Positional Lists
 
 - [**Position Interface**](./List%20and%20Iterators/Positional%20Lists/Position.java) - Interface for Positions
 - [**Positional Lists Interface**](./List%20and%20Iterators/Positional%20Lists/PositionalLists.java) - Interface for Positional Lists
-- [**Linked Positional List**](./List%20and%20Iterators/Positional%20Lists/LinkedPositionalList.java) - Doubly Linked List based Implementation for Positional List
+- [**Linked Positional List**](./List%20and%20Iterators/Positional%20Lists/LinkedPositionalList.java) - Doubly Linked List based Implementation for Positional List and Iterator Implementation
+
+#### Iterators
+
+*Iterator implementation can be found in thier respective classes*
+
+#### Case Study: Maintaining access frequency
+
+- [**Favorites List**](./List%20and%20Iterators/Positional%20Lists/FavouritesLists.java) - A List that containes elements as per the frequency
+- [**Move-to-Front Heuristic**](./List%20and%20Iterators/Positional%20Lists/FavouritesListMTF.java) - Move-to-Front Heuristic Implementation
 
 ## Getting Started
 
@@ -134,7 +143,7 @@ java FileName
 - [x] Stacks
 - [x] Queues
 - [x] Deques
-- [ ] List and Iterator ADTs
+- [x] List and Iterator ADTs
 - [ ] Trees
 - [ ] Priority Queues
 - [ ] Heaps
