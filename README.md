@@ -100,7 +100,8 @@ This repository contains theory and practical implementations of Data Structures
 #### Lists
 
 - [**Static ArrayList**](./List%20and%20Iterators/Lists/ArrayListC.java) - Implementation of Static Array List
-- [**Dynamic ArrayList**](./List%20and%20Iterators/Lists/DynamicArrayListC.java) - Implementation of Dynamic Array List and Iterator implementation
+- [**Dynamic ArrayList**](./List%20and%20Iterators/Lists/DynamicArrayListC.java) - Implementation of Dynamic Array List and Iterator implementation and Exercise R-7.5
+- [**Circular ArrayList**](./List%20and%20Iterators/Lists/CircularArrayList.java) - Exercise C-7.25, C-7.27
 
 #### Positional Lists
 
@@ -116,6 +117,22 @@ This repository contains theory and practical implementations of Data Structures
 
 - [**Favorites List**](./List%20and%20Iterators/Positional%20Lists/FavouritesLists.java) - A List that containes elements as per the frequency
 - [**Move-to-Front Heuristic**](./List%20and%20Iterators/Positional%20Lists/FavouritesListMTF.java) - Move-to-Front Heuristic Implementation
+
+#### Exercises
+
+- [**Exercise One**](./List%20and%20Iterators/Lists/ArrListStack.java) - Exercise R-7.2
+
+### **6. Trees**
+
+#### General Trees
+
+- [**Tree**](./Trees/General%20Trees/TreeC.java) - Tree Interface
+- [**Abstract Tree**](./Trees/General%20Trees/AbstractTreeC.java) - Abstract Tree Class
+
+#### Binary Trees
+
+- [**Binary Tree**](./Trees/Binary%20Trees/BinaryTreeC.java) - Binary Tree Interface
+- [**Abstract Binary Tree**](./Trees/Binary%20Trees/AbstractBinaryTreeC.java) - Abstract Binary Tree Class
 
 ## Getting Started
 

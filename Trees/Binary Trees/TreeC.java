@@ -1,0 +1,17 @@
+// this file is here to aid TreeC class, this is not primarily a part of this
+import java.util.Iterator;
+
+public interface TreeC<E> extends  Iterable<E> {
+    Position<E> root();
+    Position<E> parent(Position<E> p) throws IllegalArgumentException;
+    Iterable<Position<E>> children(Position<E> p) throws IllegalArgumentException;
+    int numChildren(Position<E> p) throws IllegalArgumentException;
+    boolean isChildren(Position<E> p) throws IllegalArgumentException;
+    boolean isInternal(Position<E> p) throws IllegalArgumentException;
+    boolean isExternal(Position<E> p) throws IllegalArgumentException;
+    int size();
+    boolean isEmpty();
+    @Override
+    Iterator<E> iterator();
+    Iterable<Position<E>> positions();
+}

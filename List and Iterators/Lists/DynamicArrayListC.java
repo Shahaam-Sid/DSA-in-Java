@@ -1,7 +1,7 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class DynamicArrayListC<E> implements ListC<E>, Iterable<E> {
+public class DynamicArrayListC<E> implements ListC<E>, Iterable<E>, Cloneable {
 
     /**
      * A (nonstatic) inner class. Note well that each instance contains an implicit
@@ -110,5 +110,22 @@ public class DynamicArrayListC<E> implements ListC<E>, Iterable<E> {
     }
     protected void checkIndex(int i, int n) throws IndexOutOfBoundsException {
         if (i < 0 || i >= n) throw new IndexOutOfBoundsException("Illegal Index: " + i);
+    }
+    
+    //R-7.5
+    public static <E> DynamicArrayListC<E> trimToSize(DynamicArrayListC<E> list) {
+        DynamicArrayListC<E> finalList = new DynamicArrayListC<>(list.size);
+
+        for (int i = 0; i < list.size; i++) {
+            finalList.add(i, list.get(i));
+        }
+
+        return finalList;
+    }
+    // C-7.27
+    public DynamicArrayListC<E> clone() throws CloneNotSupportedException {
+        DynamicArrayListC<E> cloned = (DynamicArrayListC<E>) super.clone();
+        cloned.data = data.clone();
+        return cloned;
     }
 }
